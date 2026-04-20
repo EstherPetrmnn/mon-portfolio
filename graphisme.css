@@ -1,0 +1,248 @@
+body {
+    background-image: url('Images/FondVert.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Bouton retour */
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: 0.3s;
+    background: rgba(0,0,0,0.3);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.menu {
+    position: absolute;
+    top: 30px;   /* Distance du haut */
+    right: 5%;  
+    display: flex;
+    align-items: center; /* Aligne verticalement les textes */
+    list-style: none;
+    gap: 30px; /* L'espace entre tes rubriques */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 30px; /* Espace entre les rubriques */
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffff00; /* Le lien devient jaune au survol */
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Le menu caché par défaut */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Se place juste en dessous du lien */
+    left: 0;
+    background-color: #fff9f3;
+    min-width: 180px;
+    z-index: 1000;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    flex-direction: column; /* LUI, il doit être vertical */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.dropdown-content li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style des liens à l'intérieur du menu déroulant */
+.dropdown-content li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    text-transform: none; /* On peut laisser en minuscule pour différencier */
+    transition: background 0.3s;
+    text-align: left;
+    width: 100%;       /* Force la largeur totale */
+    box-sizing: border-box;
+}
+
+/* Changement de couleur au survol d'une sous-rubrique */
+.dropdown-content li a:hover {
+    background-color: #ff7ac3; /* Ton Rose */
+    color: white;
+}
+
+/* L'ACTION : Afficher le menu au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease; /* Petit effet d'apparition fluide */
+}
+
+/* Animation optionnelle pour la fluidité */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.loading-status {
+    display: flex;          /* Active le mode Flexbox */
+    flex-direction: column; /* Aligne l'icône et le texte l'un au-dessus de l'autre */
+    align-items: center;    /* Centre horizontalement */
+    justify-content: center;/* Centre verticalement si besoin */
+    width: 100%;            /* Prend toute la largeur de la page */
+    margin: 40px 0 90px;         /* Ajoute de l'espace en haut et en bas */
+    clear: both;            /* Sécurité : empêche les éléments de flotter à côté */
+}
+
+.loading-status p {
+    margin-top: 10px;       /* Petit espace sous l'icône */
+    color: white;           /* Ou la couleur de ton choix */
+    font-size: 1.2rem;
+}
+
+/* On utilise fa-spin de FontAwesome, mais on peut ajuster la vitesse si besoin */
+.fa-spin {
+    animation: fa-spin 2s infinite linear;
+    color: #ffff00;
+}
+
+.graph-section {
+    padding: 100px 10%;
+    min-height: 100vh;
+}
+
+.graph-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ffff00; /* Jaune Section 4 */
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(41, 41, 41, 0.5);
+}
+
+.yellow-bar {
+     width: 60px;
+    height: 5px;
+    background-color: #ffff00;
+}
+
+.status-container {
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mise en page des cartes de projet */
+.graph-gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.graph-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+/* Pour alterner l'image à gauche/droite (optionnel) */
+.graph-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* L'image (format affiche) */
+.graph-preview {
+    flex: 1;
+    max-width: 400px; /* On limite pour garder le format affiche */
+    height: 550px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+
+    perspective: 1000px;     /* Indispensable : Crée la profondeur de champ */
+    transform-style: preserve-3d; /* Permet aux enfants d'être en 3D aussi */
+    cursor: zoom-in;
+}
+
+.graph-preview img {
+    width: 100%;
+    height: 100%;        /* 2. L'image doit prendre toute la hauteur */
+    object-fit: cover;   /* 3. LE PLUS IMPORTANT : Remplit la case sans déformer */
+    object-position: center; /* Centre l'image dans la case */
+    transition: all 0.5s ease;
+    cursor: zoom-in;
+    transition: transform 0.15s ease-out; /* Un peu plus lent pour la fluidité */
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Effet au survol */
+.graph-preview:hover img {
+    box-shadow: 0 45px 100px rgba(0,0,0,0.5);
+    will-change: transform;
+}
+
+/* Le texte à côté */
+.graph-info {
+    flex: 1.5;
+}
+
+.graph-info h3 {
+    font-size: 2rem;
+    color: #ffff00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(41, 41, 41, 0.8);
+}
+
+.graph-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #eee;
+    text-shadow: 2px 2px 10px rgba(41, 41, 41, 0.8);
+    text-align: justify;
+}
+
+.highlight {
+    color: #ffff00;
+    font-weight: bold;              /* On force le texte en noir pour le contraste sur le jaune */
+    padding: 2px 5px;         /* Un peu d'espace autour des mots pour que ça respire */
+    opacity: 0.8;
+}
+
+.graph-info h4 {
+    color: #ff7ac3;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 10px rgba(41, 41, 41, 0.8);
+}

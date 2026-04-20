@@ -1,0 +1,201 @@
+body {
+    background-image: url('Images/FondVert.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: absolute;
+    top: 30px;   /* Distance du haut */
+    right: 5%;  
+    display: flex;
+    align-items: center; /* Aligne verticalement les textes */
+    list-style: none;
+    gap: 30px; /* L'espace entre tes rubriques */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 30px; /* Espace entre les rubriques */
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffff00; /* Le lien devient jaune au survol */
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Le menu caché par défaut */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Se place juste en dessous du lien */
+    left: 0;
+    background-color: #fff9f3;
+    min-width: 180px;
+    z-index: 1000;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    flex-direction: column; /* LUI, il doit être vertical */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+}
+
+.dropdown-content li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style des liens à l'intérieur du menu déroulant */
+.dropdown-content li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    text-transform: none; /* On peut laisser en minuscule pour différencier */
+    transition: background 0.3s;
+    text-align: left;
+    width: 100%;       /* Force la largeur totale */
+    box-sizing: border-box;
+}
+
+/* Changement de couleur au survol d'une sous-rubrique */
+.dropdown-content li a:hover {
+    background-color: #ff7ac3; /* Ton Rose */
+    color: white;
+}
+
+/* L'ACTION : Afficher le menu au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease; /* Petit effet d'apparition fluide */
+}
+
+/* Animation optionnelle pour la fluidité */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.video-detail-section {
+    padding: 100px 10%;
+    min-height: 100vh;
+}
+
+.video-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ffff00; /* Jaune Section 4 */
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(41, 41, 41, 0.5);
+}
+
+.decorative-line-contact {
+    width: 60px;
+    height: 5px;
+    background-color: #ffff00;
+}
+
+.video-container-page {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Grand espace entre les deux projets */
+}
+
+.video-item-detail {
+    display: flex;
+    flex-direction: column; /* Texte AU DESSUS de la vidéo */
+    gap: 30px;
+}
+
+/* Style des sous-titres (Catégories) */
+.category-tag {
+    color: #ff7ac3; /* Rose pour bien distinguer */
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(41, 41, 41, 0.7);
+}
+
+.project-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    max-width: 1100px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(41, 41, 41, 0.6);
+    text-align: justify;
+}
+
+.highlight {
+    color: #ffff00;
+    font-weight: bold;              /* On force le texte en noir pour le contraste sur le jaune */
+    padding: 2px 5px;         /* Un peu d'espace autour des mots pour que ça respire */
+    opacity: 0.8;
+}
+
+/* Le Lecteur Vidéo */
+.video-player {
+    width: 90%;            /* Prend presque toute la largeur sur mobile */
+    max-width: 800px;      /* Ne dépasse jamais 800px sur ordinateur */
+    margin: 20px auto;
+}
+
+.video-player iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;  /* Définit la forme rectangulaire automatiquement */
+    border: none;          /* Enlève la bordure par défaut */
+    border-radius: 12px;   /* Ajoute un petit arrondi plus moderne */
+    display: block;
+}
+
+
+/* Bouton retour */
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: 0.3s;
+    background: rgba(0,0,0,0.3);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.back-button:hover {
+    color: #ffff00;
+    background: rgba(0,0,0,0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-main-title { font-size: 2.5rem; }
+    .video-detail-section { padding: 80px 5%; }
+}

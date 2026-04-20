@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Photos | Portfolio</title>
+    <link rel="stylesheet" href="photo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <a href="index.html#portfolio" class="back-button">
+        <i class="fas fa-arrow-left"></i> Retour
+    </a>
+
+<section id="menu">
+    <nav>
+    <ul class="menu">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#a-propos">À propos de moi</a></li>
+        
+        <li class="dropdown">
+            <a href="index.html#portfolio" class="dropbtn">Mon portfolio</a>
+            <ul class="dropdown-content">
+                <li><a href="video.html">Vidéo</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="graphisme.html">Graphisme</a></li>
+                <li><a href="motion.html">Motion Design</a></li>
+            </ul>
+        </li>
+
+        <li><a href="page_accueil.html#contact">Me contacter</a></li>
+    </ul>
+</nav>
+</section>
+
+<section class="photo-intro">
+    <h1 class="titre-jaune">MES PHOTOGRAPHIES</h1>
+    <div class="decorative-line-contact"></div>
+    <p>Depuis janvier 2026, je me suis mise à la photographie comme un nouveau moyen de m’exprimer et d’élargir mon univers créatif. Venant de la vidéo, j’apprends à ralentir et à changer de regard : là où le mouvement guide l’œil, la photo m’oblige à capturer l’essentiel en un instant. Ce portfolio, c’est un peu mon terrain d’expérimentation, où je teste des styles et des ambiances pour peu à peu construire ma propre identité visuelle.</p>
+</section>
+
+<h2 class="carousel-title">Parcourez les différents thèmes !</h2>
+
+<div class="carousel-container">
+    <button class="arrow-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+    
+    <div class="carousel-view">
+        <div class="carousel-track" id="track">
+            <div class="theme-card" onclick="showGallery('Chromatic')">
+                <img src="Images/photos/Portrait/Capture.webp">
+                <div class="theme-overlay">Chromatic 2000</div>
+            </div>
+            <div class="theme-card" onclick="showGallery('Onirique')">
+                <img src="Images/photos/Onirique/oni1.webp">
+                <div class="theme-overlay">Ambiance onirique</div>
+            </div>
+            <div class="theme-card" onclick="showGallery('Architecture')">
+                <img src="Images/photos/Archi/Capture1.webp">
+                <div class="theme-overlay">Architecture</div>
+            </div>
+            <div class="theme-card" onclick="showGallery('details')">
+                <img src="Images/photos/Details/detail2.jpg">
+                <div class="theme-overlay">Les détails de Blois</div>
+            </div>
+             <div class="theme-card" onclick="showGallery('saturee')">
+                <img src="Images/photos/Saturee/Sat1.webp">
+                <div class="theme-overlay">Ambiance Saturée</div>
+            </div>
+        </div>
+    </div>
+
+    <button class="arrow-btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<div id="gallery-display" class="gallery-section">
+    <h2 id="gallery-title" class="titre-gallerie"></h2>
+    <p id="gallery-description" class="gallerie-description"></p>
+    <div id="gallery-grid" class="photo-grid">
+        </div>
+</div>
+
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<script src="page_accueil.js"></script>
+
+</body>
+</html>
