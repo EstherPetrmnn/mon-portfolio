@@ -118,6 +118,7 @@ function showGallery(theme) {
     galleries[theme].imgs.forEach(src => {
         const img = document.createElement('img');
         img.src = src;
+        img.loading = 'lazy';
         img.onclick = () => openLightbox(src);
         img.style.cursor = "zoom-in"; // Curseur loupe pour l'utilisateur
 
