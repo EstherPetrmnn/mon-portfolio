@@ -307,10 +307,10 @@ padding: 100px 10%;
     color: #ffff00;
 }
 
-.theme-card img, .gallery-grid img {
-    background: #2a2a2a; /* Couleur de fond sombre */
+.theme-card img, .photo-grid img {
+    background: #f0f0f0; /* Couleur de fond sombre */
     min-height: 200px;   /* Garde une structure même vide */
-    transition: filter 0.5s ease-in-out; /* Transition douce pour le flou */
+    transition: filter 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Transition douce pour le flou */
 }
 
 .img-loading {
