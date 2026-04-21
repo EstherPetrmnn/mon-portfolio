@@ -119,6 +119,10 @@ function showGallery(theme) {
         const img = document.createElement('img');
         img.src = src;
         img.loading = 'lazy';
+        img.classList.add('img-loading');
+        img.onload = function() {
+        img.classList.remove('img-loading');
+    };
         img.onclick = () => openLightbox(src);
         img.style.cursor = "zoom-in"; // Curseur loupe pour l'utilisateur
 
