@@ -309,6 +309,7 @@ padding: 100px 10%;
 
 .theme-card img, .photo-grid img {
     background: #f0f0f0; /* Couleur de fond sombre */
+    
     min-height: 200px;   /* Garde une structure même vide */
     transition: filter 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Transition douce pour le flou */
 }
@@ -316,6 +317,7 @@ padding: 100px 10%;
 .img-loading {
     filter: blur(10px);
     clip-path: inset(0); /* Empêche le flou de déborder sur les côtés */
+    border-radius: 8px;
 }
 @keyframes pulse {
     0% { background-color: #2a2a2a; }
