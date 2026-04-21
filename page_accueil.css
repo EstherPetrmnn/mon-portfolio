@@ -382,16 +382,19 @@ h1 {
 /* Disposition en ligne parfaite */
 .contact-card {
     display: flex;
-    flex-direction: column; /* Aligne les infos verticalement sur mobile */
+    flex-direction: row; /* Aligné sur une ligne */
+    justify-content: space-around; /* Espace bien les infos */
     align-items: center;
-    gap: 15px;
-    text-align: center;
+    gap: 20px;
 }
 
-    flex-direction: column; /* Aligne les infos verticalement sur mobile */
-    align-items: center;
-    gap: 15px;
-    text-align: center;
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column; /* On bascule en colonne uniquement ici */
+        text-align: center;
+        gap: 15px;
+    }
+}
 
 
 .contact-item {
