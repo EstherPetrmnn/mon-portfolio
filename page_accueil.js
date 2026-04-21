@@ -96,11 +96,11 @@ const galleries = {
     'Architecture': { 
         title: 'Architecture', 
         description : 'À travers cette série personnelle, je cherche à révéler la beauté de l’architecture sous différentes formes. J’explore aussi bien des bâtiments majestueux, comme les églises ou les châteaux, que des lieux plus ordinaires, tels qu’un coin de rue ou un bâtiment abandonné. Mon regard s’attarde autant sur la richesse des constructions que sur leur évolution, notamment lorsqu’elles sont marquées par le temps ou progressivement envahies par la nature.',
-        imgs: ['Images/photos/Archi/Archi1.webp','Images/photos/Archi/Archi1.2.webp', 'Images/photos/Archi/Archi2.jpg', 'Images/photos/Archi/Archi3.jpg', 'Images/photos/Archi/Archi4.webp', 'Images/photos/Archi/Archi5.webp', 'Images/photos/Archi/Archi6.webp', 'Images/photos/Archi/Archi8.webp', 'Images/photos/Archi/Archi9.webp'] },
+        imgs: ['Images/photos/Archi/Archi1.webp','Images/photos/Archi/Archi1.2.webp', 'Images/photos/Archi/Archi2.webp', 'Images/photos/Archi/Archi3.webp', 'Images/photos/Archi/Archi4.webp', 'Images/photos/Archi/Archi5.webp', 'Images/photos/Archi/Archi6.webp', 'Images/photos/Archi/Archi8.webp', 'Images/photos/Archi/Archi9.webp'] },
     'details': { 
         title: "Les détails de Blois", 
         description : 'Ce thème est né d\'un projet académique dont l\'objectif était de photographier le ville de Blois avec notre propre regard, un regard nouveau. J\'ai choisi de suivre une ligne artistique centrée sur le détail : de petites constructions isolées, des ornements discrets ou des éléments du quotidien plus insolites comme des pots de fleurs amusants. C\'est une exploration de ce qui compose l\'identité de la ville au-delà de ses grands monuments.',
-        imgs: ['Images/photos/Details/detail1.jpg', 'Images/photos/Details/detail2.jpg', 'Images/photos/Details/detail3.jpg', 'Images/photos/Details/detail4.jpg', 'Images/photos/Details/detail5.webp', 'Images/photos/Details/detail6.webp', 'Images/photos/Details/detail7.webp'] },
+        imgs: ['Images/photos/Details/detail1.webp', 'Images/photos/Details/detail2.webp', 'Images/photos/Details/detail3.webp', 'Images/photos/Details/detail4.webp', 'Images/photos/Details/detail5.webp', 'Images/photos/Details/detail6.webp', 'Images/photos/Details/detail7.webp'] },
     'saturee': { 
         title: "L'Instant Vif", 
         description :'Ce thème regroupe des photos personnelles qui illustrent un style que j\'affectionne beaucoup : des photos lumineuses, vibrantes, avec des couleurs hyper saturées. Je joue sur la vivacité des couleurs pour donner une énergie pop et percutante à mes images.' ,
