@@ -378,7 +378,7 @@ padding: 100px 10%;
     }
 
     #gallery-grid {
-        column-count: 2;
+        column-count: 1;
     }
 
     .carousel-title {
