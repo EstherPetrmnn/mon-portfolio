@@ -100,7 +100,7 @@ const galleries = {
     'details': { 
         title: "Les détails de Blois", 
         description : 'Ce thème est né d\'un projet académique dont l\'objectif était de photographier le ville de Blois avec notre propre regard, un regard nouveau. J\'ai choisi de suivre une ligne artistique centrée sur le détail : de petites constructions isolées, des ornements discrets ou des éléments du quotidien plus insolites comme des pots de fleurs amusants. C\'est une exploration de ce qui compose l\'identité de la ville au-delà de ses grands monuments.',
-        imgs: ['Images/photos/Details/detail1.webp', 'Images/photos/Details/detail2.webp', 'Images/photos/Details/detail3.webp', 'Images/photos/Details/detail4.webp', 'Images/photos/Details/detail5.webp', 'Images/photos/Details/detail6.webp', 'Images/photos/Details/detail7.webp'] },
+        imgs: ['Images/photos/Details/detail1.webp', 'Images/photos/Details/detail2.webp', 'Images/photos/Details/detail3.jpg', 'Images/photos/Details/detail4.webp', 'Images/photos/Details/detail5.webp', 'Images/photos/Details/detail6.webp', 'Images/photos/Details/detail7.webp'] },
     'saturee': { 
         title: "L'Instant Vif", 
         description :'Ce thème regroupe des photos personnelles qui illustrent un style que j\'affectionne beaucoup : des photos lumineuses, vibrantes, avec des couleurs hyper saturées. Je joue sur la vivacité des couleurs pour donner une énergie pop et percutante à mes images.' ,
