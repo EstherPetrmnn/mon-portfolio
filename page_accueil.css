@@ -590,7 +590,7 @@ html {
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
     
     /* 1. Agrandir Prénom, Nom et Sous-titre */
     .hero h1 {
