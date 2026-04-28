@@ -615,7 +615,7 @@ html {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important; /* On s'assure d'avoir 4 colonnes */
         /* On réduit la hauteur d'une ligne à 30vh (environ 300-350px sur un grand écran) */
-        grid-auto-rows: 35vh !important; 
+        grid-auto-rows: 45vh !important; 
         gap: 20px !important;
         overflow: visible !important;
     }
