@@ -589,3 +589,76 @@ html {
         word-break: break-all;          /* Évite que l'email ne sorte de l'écran */
     }
 }
+
+@media (min-width: 1500px) {
+    
+    /* 1. Agrandir Prénom, Nom et Sous-titre */
+    .hero h1 {
+        font-size: 5rem !important; /* Prénom & Nom plus imposants */
+        line-height: 1.1;
+    }
+
+    .hero .subtitle {
+        font-size: 1.8rem !important; /* Sous-titre plus lisible */
+        letter-spacing: 5px !important;
+        margin-top: 20px;
+    }
+
+    /* 2. Agrandir la grille Portfolio (Hauteur accentuée) */
+    .portfolio-container {
+        max-width: 1400px !important; /* On élargit le conteneur */
+        margin: 0 auto !important;
+    }
+
+    .portfolio-grid-full {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Garde 2 colonnes mais plus grandes */
+        gap: 30px !important;
+    }
+
+    .portfolio-item {
+        height: 600px !important; /* On augmente fortement la hauteur */
+        border-radius: 20px !important;
+    }
+
+    .portfolio-item img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important; /* L'image remplit tout le cadre sans se déformer */
+    }
+
+    /* 3. Section Contact : Image de fond et Titre centré */
+    .contact-section {
+        min-height: 80vh !important; /* Agrandit la section verticalement */
+        background-size: cover !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .contact-overlay {
+        max-width: 1400px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center !important; /* Centre tout le texte et la carte */
+        padding: 60px 0 !important;
+    }
+
+    .contact-title {
+        font-size: 3.5rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .decorative-line-contact {
+        margin: 0 auto 40px auto !important; /* Centre la ligne décorative */
+    }
+
+    .contact-card {
+        display: flex !important;
+        justify-content: center !important; /* Centre les icônes de contact */
+        gap: 50px !important;
+        background: rgba(0, 0, 0, 0.2) !important; /* Optionnel : fond léger pour la lisibilité */
+        padding: 30px !important;
+        border-radius: 15px;
+    }
+}
