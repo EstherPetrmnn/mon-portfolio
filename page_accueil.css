@@ -591,74 +591,66 @@ html {
 }
 
 @media (min-width: 1800px) {
-    
-    /* 1. Agrandir Prénom, Nom et Sous-titre */
+
+    /* 1. ON AGRANDIT LES TEXTES DE L'ACCUEIL */
     .hero h1 {
-        font-size: 5rem !important; /* Prénom & Nom plus imposants */
+        font-size: 5.5rem !important;
         line-height: 1.1;
     }
 
     .hero .subtitle {
-        font-size: 1.8rem !important; /* Sous-titre plus lisible */
-        letter-spacing: 5px !important;
-        margin-top: 20px;
+        font-size: 2.2rem !important;
+        letter-spacing: 8px !important;
+        margin-top: 25px;
     }
 
-    /* 2. Agrandir la grille Portfolio (Hauteur accentuée) */
+    /* 2. ON AGRANDIT LA GRILLE PORTFOLIO (Surtout la hauteur) */
     .portfolio-container {
-        max-width: 1400px !important; /* On élargit le conteneur */
-        margin: 0 auto !important;
+        max-width: 1500px !important; /* On élargit le cadre */
+        margin: 50px auto !important; /* On le décolle un peu du haut */
     }
 
     .portfolio-grid-full {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important; /* Garde 2 colonnes mais plus grandes */
-        gap: 30px !important;
+        grid-auto-rows: 400px !important; /* ON DOUBLE LA HAUTEUR (de 220px à 400px) */
+        gap: 20px !important; /* Plus d'espace entre les blocs */
     }
 
+    /* On s'assure que les arrondis et ombres suivent */
     .portfolio-item {
-        height: 600px !important; /* On augmente fortement la hauteur */
+        border-radius: 20px !important;
+    }
+    .portfolio-item img {
         border-radius: 20px !important;
     }
 
-    .portfolio-item img {
-        height: 100% !important;
-        width: 100% !important;
-        object-fit: cover !important; /* L'image remplit tout le cadre sans se déformer */
-    }
-
-    /* 3. Section Contact : Image de fond et Titre centré */
+    /* 3. SECTION CONTACT : ON AGRANDIT LE FOND ET ON CENTRE TOUT */
     .contact-section {
-        min-height: 80vh !important; /* Agrandit la section verticalement */
+        min-height: 85vh !important; /* Prend presque tout l'écran en hauteur */
         background-size: cover !important;
         display: flex !important;
         align-items: center !important;
-        justify-content: center !important;
     }
 
     .contact-overlay {
-        max-width: 1400px !important;
         width: 100% !important;
+        max-width: 1200px !important;
         margin: 0 auto !important;
-        text-align: center !important; /* Centre tout le texte et la carte */
-        padding: 60px 0 !important;
+        text-align: center !important; /* Centre les titres et la carte */
     }
 
     .contact-title {
-        font-size: 3.5rem !important;
-        margin-bottom: 10px !important;
+        font-size: 4rem !important;
+        text-align: center !important;
     }
 
     .decorative-line-contact {
-        margin: 0 auto 40px auto !important; /* Centre la ligne décorative */
+        margin: 20px auto 40px auto !important; /* Centre la ligne rose */
+        width: 100px !important;
     }
 
     .contact-card {
         display: flex !important;
-        justify-content: center !important; /* Centre les icônes de contact */
-        gap: 50px !important;
-        background: rgba(0, 0, 0, 0.2) !important; /* Optionnel : fond léger pour la lisibilité */
-        padding: 30px !important;
-        border-radius: 15px;
+        justify-content: center !important; /* Centre les 3 icônes de contact */
+        gap: 100px !important; /* Gros espace entre téléphone, mail et linkedin */
     }
 }
