@@ -606,16 +606,16 @@ html {
 
     /* 2. ON AGRANDIT LA GRILLE PORTFOLIO (Surtout la hauteur) */
     .portfolio-container {
-        max-width: 1600px !important;
+        max-width: 1700px !important;
         margin: 0 auto !important;
         padding: 0 !important;
     }
 
     .portfolio-grid-full {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important; /* On s'assure d'avoir 4 colonnes */
+        grid-template-columns: repeat(3, 1fr) !important; /* On s'assure d'avoir 4 colonnes */
         /* On réduit la hauteur d'une ligne à 30vh (environ 300-350px sur un grand écran) */
-        grid-auto-rows: 300px !important; 
+        grid-auto-rows: 35vh !important; 
         gap: 20px !important;
         overflow: visible !important;
     }
