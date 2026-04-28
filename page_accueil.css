@@ -606,7 +606,7 @@ html {
 
     /* 2. ON AGRANDIT LA GRILLE PORTFOLIO (Surtout la hauteur) */
     .portfolio-container {
-        max-width: 1500px !important;
+        max-width: 1600px !important;
         margin: 30px auto !important;
         padding: 0 20px !important;
     }
