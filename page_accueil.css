@@ -638,7 +638,7 @@ html {
     .portfolio-item.photos, .portfolio-item.graphisme {
         grid-row: 1 / 3 !important; /* Ces deux-là feront 60vh de haut (environ 600-700px) */
     }
-}
+
 
     /* 3. SECTION CONTACT : ON AGRANDIT LE FOND ET ON CENTRE TOUT */
     .contact-section {
