@@ -606,16 +606,16 @@ html {
 
     /* 2. ON AGRANDIT LA GRILLE PORTFOLIO (Surtout la hauteur) */
     .portfolio-container {
-        max-width: 1800px !important;
+        max-width: 1700px !important;
         margin: 0 auto !important;
-        padding: 0 !important;
+        padding: 0 auto 40px !important;
     }
 
     .portfolio-grid-full {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important; /* On s'assure d'avoir 4 colonnes */
+        grid-template-columns: repeat(4, 1fr) !important; /* On s'assure d'avoir 4 colonnes */
         /* On réduit la hauteur d'une ligne à 30vh (environ 300-350px sur un grand écran) */
-        grid-auto-rows: 45vh !important; 
+        grid-auto-rows: 38vh !important; 
         gap: 20px !important;
         overflow: visible !important;
     }
@@ -642,7 +642,7 @@ html {
 
     /* 3. SECTION CONTACT : ON AGRANDIT LE FOND ET ON CENTRE TOUT */
     .contact-section {
-        min-height: 85vh !important; /* Prend presque tout l'écran en hauteur */
+        min-height: 65vh !important; /* Prend presque tout l'écran en hauteur */
         background-size: cover !important;
         display: flex !important;
         align-items: center !important;
@@ -658,7 +658,7 @@ html {
     .contact-title {
         font-size: 4rem !important;
         text-align: center !important;
-        margin: 20px auto 10px auto !important; 
+        margin: 20px auto 40px auto !important; 
     }
 
     .decorative-line-contact {
