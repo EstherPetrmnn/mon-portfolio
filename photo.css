@@ -460,3 +460,84 @@ padding: 100px 10%;
         padding: 10px !important;
     }
 }
+
+@media (min-width: 1800px) {
+    .decorative-line-contact {
+        margin: 10px auto 100px auto !important; /* Centre la petite barre sous le titre */
+    }
+    .titre-jaune {
+        margin: 60px auto 10px auto !important;
+        text-align: center !important;
+    }
+    .photo-intro p {
+        max-width: 1200px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-size: 1.5rem;
+    }
+    .carousel-container {
+        max-width: 1600px !important; /* On lui donne beaucoup de place */
+        margin: 50px auto !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    /* 2. On agrandit la fenêtre d'affichage des cartes */
+    .carousel-view {
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* 3. On augmente la taille des cartes (Thèmes) */
+    .theme-card {
+        /* Largeur de chaque carte. Ajuste selon combien tu veux en voir à l'écran */
+        min-width: 600px !important; 
+        height: 400px !important; /* On augmente la hauteur pour l'impact visuel */
+        margin-right: 25px !important;
+        cursor: pointer !important;
+    }
+
+    /* 4. On s'assure que les images remplissent bien toute la nouvelle hauteur */
+    .theme-card img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important; /* Important pour ne pas déformer l'image */
+        border-radius: 15px !important;
+    }
+
+    /* 5. On agrandit aussi le titre pour qu'il soit proportionnel */
+    .carousel-title {
+        font-size: 1.8rem !important;
+        text-align: center !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* 6. On rend les flèches plus visibles sur grand écran */
+    .arrow-btn {
+        font-size: 3rem !important;
+        padding: 15px !important;
+    }
+
+    .gallery-section {
+        max-width: 1800px !important; /* On réduit la largeur pour créer du vide autour */
+        margin: 0 auto !important;
+        padding: 40px 60px !important; /* Grosses marges sur les côtés */
+    }
+
+
+    /* 3. On ajuste le texte (titre et description) pour qu'il soit aligné */
+    .titre-gallerie {
+        text-align: left !important; /* Ou center selon ta préférence */
+        font-size: 2.6rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .gallerie-description {
+        max-width: 1800px !important; /* Texte un peu plus court pour la lisibilité */
+        margin-bottom: 40px !important;
+        line-height: 1.6 !important;
+        font-size: 1.5rem;
+    }
+    
+}
