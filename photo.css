@@ -473,7 +473,7 @@ padding: 100px 10%;
         max-width: 1200px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .carousel-container {
         max-width: 1600px !important; /* On lui donne beaucoup de place */
@@ -540,7 +540,7 @@ padding: 100px 10%;
         max-width: 1800px !important; /* Texte un peu plus court pour la lisibilité */
         margin-bottom: 40px !important;
         line-height: 1.6 !important;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
 }
