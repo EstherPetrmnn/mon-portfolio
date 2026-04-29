@@ -365,3 +365,13 @@ body {
     }
 
 }
+
+@media (min-width: 1800px) {
+    .yellow-bar {
+        margin: 10px auto !important; /* Centre la petite barre sous le titre */
+    }
+    .graph-main-title {
+        margin: 60px auto 10px auto !important;
+        text-align: center !important;
+    }
+}
