@@ -512,6 +512,9 @@ padding: 100px 10%;
         text-align: center !important;
         margin-bottom: 30px !important;
     }
+    .theme-overlay {
+        font-size: 2rem;
+    }
 
     /* 6. On rend les flèches plus visibles sur grand écran */
     .arrow-btn {
