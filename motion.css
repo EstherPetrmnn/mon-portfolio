@@ -308,3 +308,42 @@ body {
     }
 
 }
+@media (min-width: 1800px) {
+    .video-container-page, 
+    .video-item-detail {
+        max-width: 100% !important; 
+        width: 100% !important;
+    }
+
+    /* 2. Le texte reste sagement à 1200px et centré */
+    .video-item-detail h2, 
+    .video-item-detail h3, 
+    .video-item-detail p {
+        max-width: 1200px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* 3. LA VIDÉO : On lui donne sa propre limite plus large */
+    .video-player {
+        width: 100% !important;
+        max-width: 1100px !important; /* <--- ICI : Tu peux mettre 1500, 1600... */
+        margin: 40px auto !important; /* On centre le bloc de la vidéo */
+    }
+
+    .video-player iframe {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important;
+        display: block !important;
+    }
+
+    /* Si ton titre "MES RÉALISATIONS" a une ligne décorative dessous */
+    .yellow-bar {
+        margin: 10px auto !important; /* Centre la petite barre sous le titre */
+    }
+    .graph-main-title {
+        margin: 60px auto 10px auto !important;
+        text-align: center !important;
+    }
+}
