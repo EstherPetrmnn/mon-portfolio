@@ -278,3 +278,44 @@ body {
     }
 
 }
+
+@media (min-width: 1800px) {
+    .video-container-page {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* CENTRE TOUT HORIZONTALEMENT */
+    }
+
+/* On limite la largeur du texte pour qu'il ne soit pas trop long à lire */
+    .video-item-detail h2, 
+    .video-item-detail h3, 
+    .video-item-detail p {
+        max-width: 1200px !important; /* Largeur idéale pour la lecture */
+        margin: 0 auto 20px auto ; 
+        width: 100% !important;
+    }
+
+    /* Si ton titre "MES RÉALISATIONS" a une ligne décorative dessous */
+    .decorative-line-contact {
+        margin: 10px auto !important; /* Centre la petite barre sous le titre */
+    }
+    .video-main-title {
+        margin: 60px auto !important;
+        text-align: center !important;
+    }
+
+    /* On centre aussi la vidéo YouTube / Iframe */
+    .video-player {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+        width: 100% !important;
+        margin: 30px auto !important;
+    }
+
+    .video-player iframe {
+        max-width: 1200px !important; /* Largeur de la vidéo sur grand écran */
+        width: 100% !important;
+        aspect-ratio: 16 / 9;
+    }
+}
