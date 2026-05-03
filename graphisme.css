@@ -109,28 +109,6 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.loading-status {
-    display: flex;          /* Active le mode Flexbox */
-    flex-direction: column; /* Aligne l'icône et le texte l'un au-dessus de l'autre */
-    align-items: center;    /* Centre horizontalement */
-    justify-content: center;/* Centre verticalement si besoin */
-    width: 100%;            /* Prend toute la largeur de la page */
-    margin: 40px 0 90px;         /* Ajoute de l'espace en haut et en bas */
-    clear: both;            /* Sécurité : empêche les éléments de flotter à côté */
-}
-
-.loading-status p {
-    margin-top: 10px;       /* Petit espace sous l'icône */
-    color: white;           /* Ou la couleur de ton choix */
-    font-size: 1.2rem;
-}
-
-/* On utilise fa-spin de FontAwesome, mais on peut ajuster la vitesse si besoin */
-.fa-spin {
-    animation: fa-spin 2s infinite linear;
-    color: #ffff00;
-}
-
 .graph-section {
     padding: 100px 10%;
     min-height: 100vh;
@@ -149,6 +127,7 @@ body {
      width: 60px;
     height: 5px;
     background-color: #ffff00;
+    margin-bottom : 60px; 
 }
 
 .status-container {
