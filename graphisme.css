@@ -173,6 +173,23 @@ body {
     cursor: zoom-in;
 }
 
+.graph-card.landscape-card {
+    flex-direction: row; /* On passe l'image au dessus du texte pour le format paysage */
+    align-items: flex-start;
+}
+
+.graph-card.landscape-card .graph-preview {
+    max-width: 100%; /* Permet à l'image de prendre plus de largeur */
+    height: auto;    /* Le cadre s'adapte à la forme de l'image */
+    flex : 2;
+}
+
+.graph-card.landscape-card .graph-preview img {
+    width: 100%;
+    height: auto;
+    object-fit: normal;
+}
+
 .graph-preview img {
     width: 100%;
     height: 100%;        /* 2. L'image doit prendre toute la hauteur */
